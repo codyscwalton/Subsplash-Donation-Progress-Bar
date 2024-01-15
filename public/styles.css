@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,400&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    margin: 5px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    padding: 20px; /* Adjust padding for smaller screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#goal-text {
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.goal {
+    height: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.goal-bar {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.goal-line {
+    width: 0;
+    height: 50px;
+    border: 1px dashed #000;
+    position: absolute;
+    top: 110%;
+    bottom: auto;
+    left: auto;
+    right: 0%;
+    box-sizing: border-box;
+    display: block;
+}
+
+#progress {
+    position: relative;
+    height: 60px;
+    background-color: #4760ff; /* Completed part color */
+}
+
+.progress-line {
+    width: 1px;
+    height: 15px;
+    left: 50%;
+    top: -15px;
+    position: absolute;
+    background: #363DF7;
+    border: 1px black dotted;
+    transform: translateX(-50%);
+}
+
+#progress-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#total-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    bottom: 80%;
+    position: relative;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    #container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #goal-text {
+        float: right; /* Align "goal-text" to the right on smaller screens */ 
+    }
+
+    .goal {
+        float: none;
+        width: 100%;
+    }
+}
