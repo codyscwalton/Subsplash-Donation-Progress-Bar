@@ -7,10 +7,8 @@ body {
 }
 
 #container {
-    width: 90%;
     margin: auto;
-    padding: 20px; /* Adjust padding for smaller screens */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 #goal-text {
@@ -41,7 +39,7 @@ body {
 .goal-line {
     width: 0;
     height: 50px;
-    border: 1px dashed #000;
+    border: 1px dashed #000000;
     position: absolute;
     top: 110%;
     bottom: auto;
@@ -54,17 +52,16 @@ body {
 #progress {
     position: relative;
     height: 60px;
-    background-color: #4760ff; /* Completed part color */
+    background-color: #4760ff;
 }
 
 .progress-line {
-    width: 1px;
+    width: 2px;
     height: 15px;
     left: 50%;
     top: -15px;
     position: absolute;
     background: #363DF7;
-    border: 1px black dotted;
     transform: translateX(-50%);
 }
 
@@ -81,15 +78,10 @@ body {
     position: relative;
 }
 
-/* Media Queries for Responsive Design */
-
 @media only screen and (max-width: 768px) {
-    #container {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
 
     #goal-text {
-        float: right; /* Align "goal-text" to the right on smaller screens */ 
+        float: right;
     }
 
     .goal {
