@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(express.static('public'));
 
@@ -53,7 +53,7 @@ app.get('/donations', async (req, res) => {
 
 });
 }
-
+/* 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
-});
+}); */
