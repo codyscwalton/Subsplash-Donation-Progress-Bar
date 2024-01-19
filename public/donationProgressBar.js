@@ -97,7 +97,7 @@ function updateProgressBar(currentDonationAmount, goalAmount) {
     var progressBar = document.getElementById('progress');
     var progressText = document.getElementById('progress-text');
     var progressTotalText = document.getElementById('total-text');
-    var progressLine = document.querySelector('.progress-line'); // Select the progress line element
+    var progressLine = document.querySelector('.progress-line');
 
     progressBar.style.width = (progress * 100) + '%';
     progressTotalText.textContent = 'Total Funds - $' + (currentDonationAmount / 1000).toFixed(1) + 'K';
